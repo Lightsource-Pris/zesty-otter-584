@@ -1,0 +1,15 @@
+# Answers only the engineer can give. The engineer decides every value here: an AI agent asks the
+# engineer these questions, writes down exactly what they say and never fills in a value itself.
+# ./check.sh stops until every answer is filled in and task/task.toml agrees with them.
+
+# The name of the engineer who answered.
+answered_by = ""
+
+# Best case, how many hours would a focused expert who already knows this repository need to solve this
+# task? Goes in task/task.toml as metadata.expert_time_estimate_hours.
+expert_time_estimate_hours = 0
+
+# How many hours should the solving agent get before it is stopped? The client runs the task with
+# this budget, and an agent that runs out of time fails, so a budget that is too short makes a
+# solvable task look hard. Goes in task/task.toml as [agent] timeout_sec (hours x 3600).
+agent_timeout_hours = 0

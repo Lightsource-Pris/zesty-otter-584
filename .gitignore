@@ -1,0 +1,7 @@
+.env
+.etask/
+jobs/
+__pycache__/
+*.pyc
+.DS_Store
+task/tests/etask_grade.py
